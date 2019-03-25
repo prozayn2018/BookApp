@@ -1,8 +1,4 @@
 
-$('p').mouseout(function(){
-  $(this).css('color', 'orange')
-})
-
 $(document).ready(function(){
 
 // when addBook is clicked
