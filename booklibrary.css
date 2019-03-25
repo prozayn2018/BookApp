@@ -34,8 +34,8 @@ body {
 .grid-item{
   width: 350px;
   max-width: 350px;
-  height: 300px;
-  max-height: 300px;
+  height: 350px;
+  max-height: 350px;
   position: relative;
   text-align: left;
   background-color: rgb(255, 250, 122);
@@ -71,7 +71,7 @@ body {
 
 #author{
   position: absolute;
-  top: 80px;
+  top: 85px;
   font-family: 'Caveat', cursive;
   font-size: 30px;
   left: 10px;
@@ -92,10 +92,61 @@ body {
   font-size: 30px;
   left: 10px;
 }
-#x{
+i{
   position: absolute;
   font-size:40px;
   color:rgb(237, 90, 71);
   top: 10px;
   right: 10px;
+}
+
+#textarea1 {
+  position: absolute;
+  left: 55px;
+  top: 0px;
+  width: 220px;
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  font-size: 25px;
+  background-color: rgb(255, 250, 122);
+  border-color: rgb(255, 250, 122);
+}
+
+#textarea2 {
+  position: absolute;
+  left: 85px;
+  top: 5px;
+  width: 220px;
+  min-height: 50px;
+  max-height: 50px;
+  font-size: 20px;
+  background-color: rgb(255, 250, 122);
+  border-color: rgb(255, 250, 122);
+}
+
+#textarea3 {
+  position: absolute;
+  left: 75px;
+  top: 5px;
+  width: 220px;
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  font-size: 20px;
+  background-color: rgb(255, 250, 122);
+  border-color: rgb(255, 250, 122);
+}
+
+#textarea4 {
+  position: absolute;
+  left: 0px;
+  top: 41px;
+  width: 335px;
+  min-height: 50px;
+  max-height: 100px;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: rgb(255, 250, 122);
+  border-color: rgb(255, 250, 122);
 }
