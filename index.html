@@ -1,43 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
+  <head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Today's Date</title>
-    <link href="decibel.css" rel="stylesheet" type="text/css">
-    <script>
-        let d = new Date();
-        alert("Today's date is " + d);
+    <link href="booklibrary.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="booklibrary.css" rel="stylesheet" type="text/css">
+        <!-- Decibel - https://prozayn2018.github.io -->
+    <link rel="dns-prefetch" href="//cdn.decibelinsight.net">
+    <link rel="dns-prefetch" href="//collection.decibelinsight.net">
+    <script type="text/javascript">
+    // <![CDATA[
+    (function(d,e,c,i,b,el,it) {
+    d._da_=d._da_||[];_da_.oldErr=d.onerror;_da_.err=[];
+    d.onerror=function(){_da_.err.push(arguments);_da_.oldErr&&_da_.oldErr.apply(d,Array.prototype.slice.call(arguments));};
+    d.DecibelInsight=b;d[b]=d[b]||function(){(d[b].q=d[b].q||[]).push(arguments);};
+    el=e.createElement(c),it=e.getElementsByTagName(c)[0];el.async=1;el.src=i;it.parentNode.insertBefore(el,it);
+    })(window,document,'script','https://cdn.decibelinsight.net/i/13961/352336/di.js','decibelInsight');
+    // ]]>
     </script>
-    <!-- Decibel - https://prozayn2018.github.io -->
-  <link rel="dns-prefetch" href="//cdn.decibelinsight.net">
-  <link rel="dns-prefetch" href="//collection.decibelinsight.net">
-  <script type="text/javascript">
-  // <![CDATA[
-  (function(d,e,c,i,b,el,it) {
-  d._da_=d._da_||[];_da_.oldErr=d.onerror;_da_.err=[];
-  d.onerror=function(){_da_.err.push(arguments);_da_.oldErr&&_da_.oldErr.apply(d,Array.prototype.slice.call(arguments));};
-  d.DecibelInsight=b;d[b]=d[b]||function(){(d[b].q=d[b].q||[]).push(arguments);};
-  el=e.createElement(c),it=e.getElementsByTagName(c)[0];el.async=1;el.src=i;it.parentNode.insertBefore(el,it);
-  })(window,document,'script','https://cdn.decibelinsight.net/i/13961/352336/di.js','decibelInsight');
-  // ]]>
-  </script>
-
-</head>
-
-<body>
-
-  <a id="one" onClick="myFunction()">VisitW3school.com!</a>
-  <a data-di-id="di-id-63ba4ff8-deb202f2" class = "element" onClick="myFunction()">2here.com!</a>
-  <script>
-    function myFunction() {
-      document.body.querySelector('.element[data-di-id="di-id-63ba4ff8-deb202f2"]').innerHTML = "It worked CLICKED ME!";
-    }
-  </script>
-
-</body>
+    <title></title>
+  </head>
+  <body>
+    <h1 id='p'>Personal Book Library</h1>
+    <button id="addbut"type="button" class="btn btn-primary">ADD NEW BOOK</button>
+  <div id="container" class="grid-container">
+    <div id="1" class="grid-item">
+        <i id="x" class="fa fa-times-circle"></i>
+        <p id='title'>Title:
+          <textarea type="text" id="textarea1" rows ="4" cols ="50"> </textarea>
+        </p>
+        <p id="author">Author:
+          <textarea id="textarea2" rows ="4" cols ="50"> </textarea>
+        </p>
+        <p id="pages">Pages:
+          <textarea id="textarea3" rows ="4" cols ="50"> </textarea>
+        </p>
+        <p id="thoughts">Thoughts: <textarea id="textarea4" rows ="4" cols ="50"> </textarea>
+        </p>
+      </button>
+    </div>
+  </div>
 
 
-
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="booklibrary.js"></script>
 </html>
